@@ -68,7 +68,7 @@ export default {
   opacity: 0;
 }
 .bounce-enter-active {
-  animation: bounce-in .5s;
+  animation: 1s linear 0s normal none infinite running rotate;
 }
 .bounce-leave-active {
   animation: bounce-in .5s reverse;
@@ -84,5 +84,12 @@ export default {
     transform: scale(1);
   }
 }
-
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 </style>
